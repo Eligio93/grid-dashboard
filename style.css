@@ -21,7 +21,8 @@
     grid-row: 1/3;
     background-color: var(--sidebar);
     display:grid;
-    grid-template-rows: 1fr 5fr 3fr;
+    grid-template-rows: auto auto 3fr;
+    gap:50px;
     
     padding:10px;
 }
@@ -37,13 +38,14 @@
     grid-row:2/3;
     background-color: var(--content);
 }
+/*style dashboard logo*/
 .dashboard{
     display:grid;
     grid-template-columns: 20% auto;
     align-items: center;
  
 }
-p{
+.dashboard p{
     font-size: 40px;
     color:white;
     text-align: center; 
@@ -51,5 +53,30 @@ p{
 svg{
    
     fill:white;
+}
+/*style first list of button*/
+a{
+    display:grid;
+    grid-template-columns: 20% auto;
+    align-items: center;
+    height:40px;
+   
+    text-decoration: none;
+    color:white;
+    
+}
+a svg{
+    width:50%;
+    height:auto;
+    justify-self: end;
+}
+a span{
+    margin-left:25px;
+    font-size: 20px;
+}
+a:hover{
+    background-color: #2f6581;
+    border-radius:10px;
+    border-left:5px solid green;
 }
 
